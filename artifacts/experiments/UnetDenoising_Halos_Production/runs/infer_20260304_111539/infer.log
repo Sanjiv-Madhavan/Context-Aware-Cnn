@@ -1,0 +1,2 @@
+2026-03-04 11:15:39,693 | INFO | unet_denoising.pipelines.infer_pipeline | Run directory: /Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/runs/infer_20260304_111539
+2026-03-04 11:15:39,704 | INFO | unet_denoising.pipelines.infer_pipeline | Loading checkpoint: /Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/checkpoints/unet_halo_ep503.pth

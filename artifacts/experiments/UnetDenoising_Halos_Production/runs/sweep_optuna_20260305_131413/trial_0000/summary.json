@@ -1,0 +1,77 @@
+{
+  "trial": 0,
+  "params": {
+    "lr": 5.6115164153345e-05,
+    "batch_size": 2,
+    "patch_size": 64,
+    "border_size": 8,
+    "crops_per_image": 16,
+    "epochs": 10
+  },
+  "metric_name": "val_ssim",
+  "score": 0.8723243968848966,
+  "best_epoch": 8,
+  "best_checkpoint": "/Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/runs/sweep_optuna_20260305_131413/trial_0000/checkpoints/unet_halo_ep8.pth",
+  "history": [
+    {
+      "train_loss": 0.05130490269829327,
+      "val_loss": 0.052352771910795154,
+      "val_psnr": 28.765371268752475,
+      "val_ssim": 0.8439496286210045
+    },
+    {
+      "train_loss": 0.03884016872891313,
+      "val_loss": 0.04552214854952757,
+      "val_psnr": 29.551267255634194,
+      "val_ssim": 0.8598212877302195
+    },
+    {
+      "train_loss": 0.03574913815716643,
+      "val_loss": 0.03641928824218943,
+      "val_psnr": 30.475256216070242,
+      "val_ssim": 0.8689711572675515
+    },
+    {
+      "train_loss": 0.03434283033503179,
+      "val_loss": 0.04024506982849153,
+      "val_psnr": 30.035418399987694,
+      "val_ssim": 0.8680808874466127
+    },
+    {
+      "train_loss": 0.03396312475193195,
+      "val_loss": 0.03890654159202835,
+      "val_psnr": 30.186758508549886,
+      "val_ssim": 0.8707351308600855
+    },
+    {
+      "train_loss": 0.03378785764875426,
+      "val_loss": 0.03509169880618413,
+      "val_psnr": 30.568192284341514,
+      "val_ssim": 0.8699415196007136
+    },
+    {
+      "train_loss": 0.033105420967240486,
+      "val_loss": 0.034833501466149115,
+      "val_psnr": 30.60662498543054,
+      "val_ssim": 0.871422148893671
+    },
+    {
+      "train_loss": 0.03319742865205663,
+      "val_loss": 0.033854638761550315,
+      "val_psnr": 30.79146967490563,
+      "val_ssim": 0.8723243968848966
+    },
+    {
+      "train_loss": 0.03299536015053203,
+      "val_loss": 0.03428792529329556,
+      "val_psnr": 30.70290866609621,
+      "val_ssim": 0.8711747774977806
+    },
+    {
+      "train_loss": 0.03228430646870717,
+      "val_loss": 0.03688432545539384,
+      "val_psnr": 30.289766694436526,
+      "val_ssim": 0.868826539163537
+    }
+  ]
+}

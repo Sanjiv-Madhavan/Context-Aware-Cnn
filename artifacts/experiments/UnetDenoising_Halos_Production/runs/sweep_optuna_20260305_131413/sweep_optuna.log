@@ -1,0 +1,16 @@
+2026-03-05 13:23:42,715 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=1 train_loss=0.051305 val_loss=0.052353 val_psnr=28.7654 val_ssim=0.8439
+2026-03-05 13:33:34,666 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=2 train_loss=0.038840 val_loss=0.045522 val_psnr=29.5513 val_ssim=0.8598
+2026-03-05 13:43:43,671 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=3 train_loss=0.035749 val_loss=0.036419 val_psnr=30.4753 val_ssim=0.8690
+2026-03-05 14:00:15,856 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=4 train_loss=0.034343 val_loss=0.040245 val_psnr=30.0354 val_ssim=0.8681
+2026-03-05 14:12:57,431 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=5 train_loss=0.033963 val_loss=0.038907 val_psnr=30.1868 val_ssim=0.8707
+2026-03-05 14:27:00,526 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=6 train_loss=0.033788 val_loss=0.035092 val_psnr=30.5682 val_ssim=0.8699
+2026-03-05 14:36:50,031 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=7 train_loss=0.033105 val_loss=0.034834 val_psnr=30.6066 val_ssim=0.8714
+2026-03-05 14:48:11,107 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=8 train_loss=0.033197 val_loss=0.033855 val_psnr=30.7915 val_ssim=0.8723
+2026-03-05 14:58:41,221 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=9 train_loss=0.032995 val_loss=0.034288 val_psnr=30.7029 val_ssim=0.8712
+2026-03-05 15:08:13,038 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=10 train_loss=0.032284 val_loss=0.036884 val_psnr=30.2898 val_ssim=0.8688
+2026-03-05 15:08:13,118 | INFO | unet_denoising.pipelines.optuna_pipeline | Saved checkpoint: /Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/runs/sweep_optuna_20260305_131413/trial_0000/checkpoints/unet_halo_ep10.pth
+2026-03-05 15:26:16,426 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=1 train_loss=0.043828 val_loss=0.032696 val_psnr=30.8845 val_ssim=0.8714
+2026-03-05 15:43:20,656 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=2 train_loss=0.036426 val_loss=0.035227 val_psnr=30.8801 val_ssim=0.8691
+2026-03-05 16:00:25,698 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=3 train_loss=0.037892 val_loss=0.032815 val_psnr=30.9260 val_ssim=0.8681
+2026-03-05 16:17:19,378 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=4 train_loss=0.037628 val_loss=0.034277 val_psnr=30.9943 val_ssim=0.8702
+2026-03-05 16:34:06,617 | INFO | unet_denoising.pipelines.optuna_pipeline | epoch=5 train_loss=0.037729 val_loss=0.032365 val_psnr=30.9147 val_ssim=0.8714

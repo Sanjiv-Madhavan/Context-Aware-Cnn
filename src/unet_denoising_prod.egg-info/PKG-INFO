@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: unet-denoising-prod
+Version: 0.1.0
+Summary: Production-ready UNet denoising refactor from notebook
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: tifffile
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+Requires-Dist: pyyaml
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0.0; extra == "dev"
+Requires-Dist: build>=1.2.0; extra == "dev"

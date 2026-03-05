@@ -1,0 +1,6 @@
+{
+  "checkpoint": "/Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/checkpoints/unet_halo_ep503.pth",
+  "inputs_dir": "/Volumes/Work/University/FYP/Codes/data/test_images/noisy",
+  "outputs_dir": "/Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/runs/infer_20260304_111839/outputs",
+  "num_images": 4
+}

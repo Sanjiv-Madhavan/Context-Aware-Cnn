@@ -1,0 +1,4 @@
+2026-03-04 09:54:41,232 | INFO | unet_denoising.pipelines.download_pipeline | Downloading dataset from https://zenodo.org/records/15624741/files/Archive.zip?download=1
+2026-03-04 09:55:19,320 | INFO | unet_denoising.pipelines.download_pipeline | Using existing extract dir: /Volumes/Work/University/FYP/Codes/data/raw/AI4Life-MDC25-Nuclei
+2026-03-04 09:55:19,324 | INFO | unet_denoising.pipelines.download_pipeline | Organized dataset counts: {'train_noisy': 0, 'train_gt': 0, 'val_noisy': 0, 'val_gt': 0, 'infer_noisy': 0, 'infer_gt': 0}
+2026-03-04 09:55:19,326 | INFO | unet_denoising.pipelines.download_pipeline | Download pipeline complete. Artifacts: /Volumes/Work/University/FYP/Codes/artifacts/experiments/UnetDenoising_Halos_Production/runs/download_20260304_095441

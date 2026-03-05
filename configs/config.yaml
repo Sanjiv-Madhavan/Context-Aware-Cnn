@@ -1,0 +1,99 @@
+paths:
+  noisy_train_dir: "${PROJECT_ROOT}/data/small_images/noisy"
+  gt_train_dir: "${PROJECT_ROOT}/data/small_images/gt"
+  noisy_val_dir: "${PROJECT_ROOT}/data/large_images/noisy"
+  gt_val_dir: "${PROJECT_ROOT}/data/large_images/gt"
+  noisy_infer_dir: "${PROJECT_ROOT}/data/test_images/noisy"
+  gt_infer_dir: "${PROJECT_ROOT}/data/test_images/gt"
+
+storage:
+  root_dir: "${PROJECT_ROOT}/artifacts"
+  experiment_name: "UnetDenoising_Halos_Production"
+
+dataset:
+  download_url: "https://zenodo.org/records/15624741/files/Archive.zip?download=1"
+  zip_path: "${PROJECT_ROOT}/data/raw/AI4Life-MDC25-Nuclei.zip"
+  extract_dir: "${PROJECT_ROOT}/data/raw/AI4Life-MDC25-Nuclei"
+  overwrite: false
+  verify_ssl: false
+  ca_cert_path: null
+
+s3:
+  endpoint_url: "http://localhost:4566"
+  dataset_bucket: "ai4life-mdc25-data"
+  artifacts_bucket: "denoisingfyp-artifacts"
+  dataset_prefix: ""
+  artifacts_prefix: "DenoisingFYP"
+  verify_ssl: false
+  auto_pull: false
+
+# mlflow:
+#   enabled: false
+#   tracking_uri: "file:${PROJECT_ROOT}/mlruns"
+#   experiment_name: "unet-denoising-sweep"
+#   run_name_prefix: "sweep"
+
+  
+
+# optuna:
+#   enabled: false
+#   n_trials: 10
+#   top_k: 3
+#   study_name: "unet_optuna"
+#   direction: "maximize"
+#   metric_name: "val_ssim"
+#   timeout_sec: null
+#   sampler_seed: 42
+#   lr_min: 0.0001
+#   lr_max: 0.001
+#   batch_size_choices: [4, 8]
+#   patch_size_choices: [128, 256]
+#   border_size_choices: [16, 32]
+#   crops_per_image_choices: [64, 128, 165]
+#   epochs_choices: [50, 100]
+
+
+mlflow:
+  enabled: true
+  tracking_uri: "file:./mlruns"   # or http://127.0.0.1:5001
+  experiment_name: "unet-optuna-sweeps"
+  run_name_prefix: "unet"
+
+optuna:
+  enabled: true
+  n_trials: 5
+  top_k: 3
+  direction: "maximize"
+  metric_name: "val_ssim"
+  sampler_seed: 42
+  lr_min: 1e-5
+  lr_max: 1e-3
+  batch_size_choices: [2, 4]
+  patch_size_choices: [64, 96]
+  border_size_choices: [8, 12]
+  crops_per_image_choices: [16, 24]
+  epochs_choices: [10, 20]
+
+
+quality_gate:
+  enabled: false
+  min_val_psnr: null
+  min_val_ssim: null
+  max_val_loss: null
+
+data:
+  patch_size: 256
+  border_size: 32
+  crops_per_image: 165
+  val_ratio: 0.2
+  num_workers: 2
+
+train:
+  seed: 3042
+  epochs: 503
+  batch_size: 8
+  lr: 0.001
+  checkpoint_every: 10
+
+inference:
+  checkpoint_name: "unet_halo_ep503.pth"

@@ -1,0 +1,2 @@
+[console_scripts]
+unet-denoise = unet_denoising.cli:main

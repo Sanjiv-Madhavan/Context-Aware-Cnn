@@ -1,0 +1,14 @@
+{
+  "endpoint_url": "http://localhost:4566",
+  "dataset_bucket": "ai4life-mdc25-data",
+  "artifacts_bucket": "denoisingfyp-artifacts",
+  "uploaded": {
+    "dataset:small_images/noisy": 2457,
+    "dataset:small_images/gt": 2457,
+    "dataset:large_images/noisy": 16,
+    "dataset:large_images/gt": 16,
+    "dataset:test_images/noisy": 4,
+    "dataset:test_images/gt": 4,
+    "artifacts": 15
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "zip_path": "/Volumes/Work/University/FYP/Codes/data/raw/AI4Life-MDC25-Nuclei.zip",
+  "extract_dir": "/Volumes/Work/University/FYP/Codes/data/raw/AI4Life-MDC25-Nuclei",
+  "counts": {
+    "train_noisy": 0,
+    "train_gt": 0,
+    "val_noisy": 0,
+    "val_gt": 0,
+    "infer_noisy": 0,
+    "infer_gt": 0
+  },
+  "train_noisy_dir": "/Volumes/Work/University/FYP/Codes/data/small_images/noisy",
+  "train_gt_dir": "/Volumes/Work/University/FYP/Codes/data/small_images/gt",
+  "val_noisy_dir": "/Volumes/Work/University/FYP/Codes/data/large_images/noisy",
+  "val_gt_dir": "/Volumes/Work/University/FYP/Codes/data/large_images/gt",
+  "infer_noisy_dir": "/Volumes/Work/University/FYP/Codes/data/test_images/noisy",
+  "infer_gt_dir": "/Volumes/Work/University/FYP/Codes/data/test_images/gt"
+}
